@@ -1,0 +1,93 @@
+<!--Create list of providers-->
+<div> Unselected Providers :
+  <select (change) = "Show($event.target.value)">
+    <option *ngFor = "let i of savedUnselected">{{i}}</option>
+  </select>
+</div>
+<br/>
+
+
+<!--Card for provider1-->
+<div *ngIf='check1'>
+  <mat-card class = "tp-card" style="text-align: center;">
+      <mat-card-title>Card</mat-card-title>
+      <mat-card-subtitle>Provider1</mat-card-subtitle>
+    <img mat-card-image src = "https://revcycleintelligence.com/images/site/features/2018-11-29_Healthcare_workforce_managment.jpg">
+    <mat-card-content>
+      <p>
+        This is the card for the provider.
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button (click)=Hide($event,1) mat-button>X</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+<!--Card for provider2-->
+<div *ngIf='check2'>
+  <mat-card class = "tp-card" style="text-align: center;">
+    <mat-card-title>Card</mat-card-title>
+    <mat-card-subtitle>Provider2</mat-card-subtitle>
+    <img mat-card-image src = "https://revcycleintelligence.com/images/site/features/2018-11-29_Healthcare_workforce_managment.jpg">
+    <mat-card-content>
+      <p>
+        This is the card for the provider.
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button (click)=Hide($event,2) mat-button>X</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+<!--Card for provider3-->
+<div *ngIf='check3'>
+  <mat-card class = "tp-card" style="text-align: center;">
+    <mat-card-title>Card</mat-card-title>
+    <mat-card-subtitle>Provider3</mat-card-subtitle>
+    <img mat-card-image src = "https://revcycleintelligence.com/images/site/features/2018-11-29_Healthcare_workforce_managment.jpg">
+    <mat-card-content>
+      <p>
+        This is the card for the provider.
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button (click)=Hide($event,3) mat-button>X</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+<!--Card for provider4-->
+<div *ngIf='check4'>
+  <mat-card class = "tp-card" style="text-align: center;">
+    <mat-card-title>Card</mat-card-title>
+    <mat-card-subtitle>Provider4</mat-card-subtitle>
+    <img mat-card-image src = "https://revcycleintelligence.com/images/site/features/2018-11-29_Healthcare_workforce_managment.jpg">
+    <mat-card-content>
+      <p>
+        This is the card for the provider.
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button (click)=Hide($event,4) mat-button>X</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+<!--Card for provider5-->
+<div *ngIf='check5'>
+  <mat-card class = "tp-card" style="text-align: center;">
+    <mat-card-title>Card</mat-card-title>
+    <mat-card-subtitle>Provider5</mat-card-subtitle>
+    <img mat-card-image src = "https://revcycleintelligence.com/images/site/features/2018-11-29_Healthcare_workforce_managment.jpg">
+    <mat-card-content>
+      <p>
+        This is the card for the provider.
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button (click)=Hide($event,5) mat-button>X</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
